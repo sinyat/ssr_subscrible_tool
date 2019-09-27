@@ -9,7 +9,7 @@ let fs = require('fs')
 
 // Convert normal string to base64 encoding string
 let base64 = (str) => {
-	return new Buffer(str).toString('base64')
+	return new Buffer.from(str).toString('base64')
 }
 
 // ReadFile Sync Function
